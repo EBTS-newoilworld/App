@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앱 링크 리디렉션</title>
+    <script>
+        if (/android/i.test(navigator.userAgent)) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.fuel.user&pli=1';
+        } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            window.location.href = 'https://apps.apple.com/kr/app/%EC%8B%A0%EC%A3%BC%EC%9C%A0%EC%B2%9C%ED%95%98/id6741352577';
+        }
+    </script>
+</head>
+<body>
+    <p>리디렉션 중입니다...</p>
+</body>
+</html>
